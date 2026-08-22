@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects · Enrico Jaupi</title>
+<meta name="description" content="Projects by Enrico Jaupi.">
+<link rel="icon" href="assets/avatar.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="dot"></span>Enrico Jaupi</a>
+    <button class="nav-toggle" aria-label="Toggle menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <section>
+      <div class="panel">
+        <span class="eyebrow">Projects</span>
+        <h1>Things I've built</h1>
+        <p>A mix of professional work and personal builds, from a company backend to a WWII cipher machine.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="panel">
+        <div class="grid">
+
+          <div class="card">
+            <h3>LA SANTI Gomme: Website Backend</h3>
+            <p>Built with another developer in a month. I led the backend: RESTful APIs, server-side logic, a Vercel deployment pipeline, SEO optimisations, and a strict Content Security Policy.</p>
+            <div class="tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">Express</span>
+              <span class="tag">Vercel</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Enigma M3 Simulator</h3>
+            <p>A historically accurate desktop simulation of the Enigma M3 cipher machine: rotor wirings, notch logic, the double-stepping anomaly, and ring settings, with a full GUI.</p>
+            <div class="tags">
+              <span class="tag">Java</span>
+              <span class="tag">JavaFX</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Arduino Temperature Monitor &amp; Dashboard</h3>
+            <p>A dual-sensor DHT11 monitoring system with LCD display, IR remote, and buzzer, paired with a Python dashboard showing live charts, rolling stats, and trend analysis via serial CSV logging.</p>
+            <div class="tags">
+              <span class="tag">Arduino</span>
+              <span class="tag">Python</span>
+              <span class="tag">DearPyGui</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Casa Domotica</h3>
+            <p>A desktop GUI application simulating a smart-home lighting control system.</p>
+            <div class="tags">
+              <span class="tag">Java</span>
+              <span class="tag">JavaFX</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Worker Scheduling System</h3>
+            <p>Freelance project for Italfood srl: designed and built the company's entire worker scheduling system in VBA/Excel, cutting manual work and eliminating recurring operational errors. Sole technical point of contact with the client.</p>
+            <div class="tags">
+              <span class="tag">VBA</span>
+              <span class="tag">Excel</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">made with a bit of caffeine · © <span id="year"></span> Enrico Jaupi</div>
+</footer>
+
+<script src="assets/nav.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
