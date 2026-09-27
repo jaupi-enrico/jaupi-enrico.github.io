@@ -53,19 +53,101 @@
         </h1>
 
         <p class="section-description">
-            A mix of professional work and personal builds, from a company backend
-            to a WWII cipher machine.
+            Headlined by Streamio, my self-hosted streaming platform, plus a mix of
+            professional work and personal builds, from a company backend to a WWII
+            cipher machine.
         </p>
 
     </section>
 
 
-    <!-- PROJECTS -->
+    <!-- FLAGSHIP -->
 
     <section class="reveal">
 
-        <div class="section-label">01 / ALL PROJECTS</div>
-        <h2 class="section-title">Selected work.</h2>
+        <div class="section-label">01 / FLAGSHIP</div>
+        <h2 class="section-title">What I'm building.</h2>
+
+        <article class="flagship" id="streamio" style="--project-color: #ff4d4d">
+
+            <div>
+                <div class="project-number">FLAGSHIP <em>2026 · SERVER + APP</em></div>
+                <h3>Streamio</h3>
+                <p class="flagship-tagline">Your movies. Your shows. Your server.</p>
+                <p class="flagship-lead">
+                    A self-hosted, Netflix-style streaming platform for the media library
+                    you already own: a TypeScript server with a web UI, plus a Flutter app
+                    for phone, TV and desktop. One <code>docker compose up</code> and it's yours.
+                </p>
+
+                <ul class="feature-list">
+                    <li>Adaptive HLS transcoding</li>
+                    <li>Accounts, Google &amp; Discord OAuth</li>
+                    <li>Real-time watch parties</li>
+                    <li>Custom Chromecast receiver</li>
+                    <li>Multi-server sync</li>
+                    <li>Encrypted offline downloads</li>
+                </ul>
+
+                <div class="hero-buttons">
+                    <a class="button primary" href="https://github.com/jaupi-enrico/streamio" target="_blank" rel="noopener">Server repo ↗</a>
+                    <a class="button secondary" href="https://github.com/jaupi-enrico/streamio-app" target="_blank" rel="noopener">App repo ↗</a>
+                </div>
+            </div>
+
+            <div class="shots">
+                <div class="shot">
+                    <img src="assets/projects/streamio-homepage.webp" alt="Streamio home page with a featured title and a row of recently added movies" width="1600" height="829" loading="lazy">
+                </div>
+                <div class="shot small">
+                    <img src="assets/projects/streamio-watch.webp" alt="Streamio video player with playback controls" width="1600" height="825" loading="lazy">
+                </div>
+            </div>
+
+        </article>
+
+        <div class="projects">
+
+            <a class="project" href="https://github.com/jaupi-enrico/streamio" target="_blank" rel="noopener" style="--project-color: #ff4d4d">
+                <div class="project-number">streamio <em>REPO ↗</em></div>
+                <h3>Streamio Server</h3>
+                <p>The backend and web frontend. Uploads are transcoded to adaptive HLS with resumable watch history; JWT sessions with Google &amp; Discord OAuth and TV device-code pairing; WebSocket watch parties; a custom Cast receiver for demuxed HLS; cross-instance sync; PostgreSQL that migrates itself at boot; optional idle auto-shutdown of the host.</p>
+                <div class="tags">
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Express</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">Redis</span>
+                    <span class="tag">WebSocket</span>
+                    <span class="tag">Docker</span>
+                </div>
+            </a>
+
+            <a class="project" href="https://github.com/jaupi-enrico/streamio-app" target="_blank" rel="noopener" style="--project-color: #9b6cff">
+                <div class="project-number">streamio-app <em>REPO ↗</em></div>
+                <h3>Streamio App</h3>
+                <p>One Flutter codebase for phone, TV and desktop, covering everything the web UI does. Adds offline downloads that resume segment by segment, are stored AES-CTR encrypted with a key in the platform keystore, and play back through a local, range-aware HLS server.</p>
+                <div class="tags">
+                    <span class="tag">Flutter</span>
+                    <span class="tag">Dart</span>
+                    <span class="tag">HLS</span>
+                    <span class="tag">Chromecast</span>
+                    <span class="tag">Drift</span>
+                    <span class="tag">AES-CTR</span>
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- MORE PROJECTS -->
+
+    <section class="reveal">
+
+        <div class="section-label">02 / MORE PROJECTS</div>
+        <h2 class="section-title">Other things I've built.</h2>
 
         <div class="projects">
 

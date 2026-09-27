@@ -66,27 +66,42 @@
             </div>
         </div>
 
-        <div class="code-window" aria-label="A code snippet describing Enrico">
+        <div class="code-window" role="img" aria-label="An Arch Linux terminal running fastfetch with Enrico's details">
             <div class="window-header">
-                <div class="window-dot"></div>
-                <div class="window-dot"></div>
-                <div class="window-dot"></div>
-                <div class="window-title">developer.ts</div>
+                <div class="window-title">
+                    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.39.605C10.376 3.092 9.764 4.72 8.635 7.132c.693.734 1.543 1.589 2.923 2.554-1.484-.61-2.496-1.224-3.252-1.86C6.86 10.842 4.596 15.138 0 23.395c3.612-2.085 6.412-3.37 9.021-3.862a6.61 6.61 0 0 1-.171-1.547l.003-.115c.058-2.315 1.261-4.095 2.687-3.973 1.426.12 2.534 2.096 2.478 4.409a6.52 6.52 0 0 1-.146 1.243c2.58.505 5.352 1.787 8.914 3.844-.702-1.293-1.33-2.459-1.929-3.57-.943-.73-1.926-1.682-3.933-2.713 1.38.359 2.367.772 3.137 1.234-6.09-11.334-6.582-12.84-8.67-17.74z"/></svg>
+                    enrico@arch: ~
+                </div>
+                <div class="window-controls" aria-hidden="true">
+                    <span><svg viewBox="0 0 10 10" stroke="currentColor" stroke-width="1.4"><path d="M1 5h8"/></svg></span>
+                    <span><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="1.5" y="1.5" width="7" height="7" rx="1"/></svg></span>
+                    <span><svg viewBox="0 0 10 10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M2 2l6 6M8 2l-6 6"/></svg></span>
+                </div>
             </div>
-<pre class="code"><span class="keyword">const</span> <span class="variable">developer</span> = {
-  name: <span class="string">"Enrico Jaupi"</span>,
-  role: <span class="string">"Full Stack Developer"</span>,
-  based: <span class="string">"Brescia, IT"</span>,
-  languages: [
-    <span class="string">"C/C++"</span>, <span class="string">"Java"</span>,
-    <span class="string">"Python"</span>, <span class="string">"JavaScript"</span>
-  ],
-  gpa: <span class="number">8.36</span>,
-  next: <span class="string">"PoliMi, Comp. Eng."</span>
-};
-
-<span class="comment">// always learning...</span>
-<span class="cursor"></span></pre>
+            <div class="terminal">
+<pre class="prompt">[<span class="user">enrico@arch</span> ~]$ <span class="cmd">fastfetch</span></pre>
+                <div class="fetch">
+<pre class="fetch-logo">      /\
+     /  \
+    /\   \
+   /      \
+  /   ,,   \
+ /   |  |  -\
+/_-''    ''-_\</pre>
+<pre class="fetch-info"><span class="host">enrico@arch</span>
+<span class="rule">-----------</span>
+<span class="key">OS</span>: Arch Linux x86_64
+<span class="key">Role</span>: Full Stack Developer
+<span class="key">Based</span>: Brescia, IT
+<span class="key">Langs</span>: C/C++, Java, Python, JS
+<span class="key">GPA</span>: 8.36 / 10
+<span class="key">Medal</span>: OII 2026 🥉
+<span class="key">Project</span>: Streamio
+<span class="key">Next</span>: PoliMi, Comp. Eng.
+<span class="palette"><span style="background:#1a1a22"></span><span style="background:#ff5c7a"></span><span style="background:#4ade80"></span><span style="background:#facc15"></span><span style="background:#5b8cff"></span><span style="background:#9b6cff"></span><span style="background:#5ee7ff"></span><span style="background:#e5e5ea"></span></span></pre>
+                </div>
+<pre class="prompt">[<span class="user">enrico@arch</span> ~]$ <span class="cursor"></span></pre>
+            </div>
         </div>
 
     </section>
@@ -106,7 +121,7 @@
             </div>
             <div class="skill fact">
                 <div class="skill-type">Currently</div>
-                <p>Finishing my Computer Science diploma at ITIS Castelli (GPA 8.36/10) while shipping freelance and personal projects on the side.</p>
+                <p>Finishing my Computer Science diploma at ITIS Castelli (GPA 8.36/10) while building Streamio, my self-hosted streaming platform, on the side.</p>
             </div>
             <div class="skill fact">
                 <div class="skill-type">Tech I like</div>
@@ -133,10 +148,43 @@
 
         <div class="section-label">02 / SELECTED WORK</div>
         <h2 class="section-title">Things I've built.</h2>
-        <p class="section-description">
-            A mix of professional work and personal builds, from a company backend
-            to a WWII cipher machine.
-        </p>
+        <article class="flagship" id="streamio" style="--project-color: #ff4d4d">
+
+            <div>
+                <div class="project-number">FLAGSHIP <em>2026 · SERVER + APP</em></div>
+                <h3>Streamio</h3>
+                <p class="flagship-tagline">Your movies. Your shows. Your server.</p>
+                <p class="flagship-lead">
+                    A self-hosted, Netflix-style streaming platform for the media library
+                    you already own: a TypeScript server with a web UI, plus a Flutter app
+                    for phone, TV and desktop. One <code>docker compose up</code> and it's yours.
+                </p>
+
+                <ul class="feature-list">
+                    <li>Adaptive HLS transcoding</li>
+                    <li>Accounts, Google &amp; Discord OAuth</li>
+                    <li>Real-time watch parties</li>
+                    <li>Custom Chromecast receiver</li>
+                    <li>Multi-server sync</li>
+                    <li>Encrypted offline downloads</li>
+                </ul>
+
+                <div class="hero-buttons">
+                    <a class="button primary" href="https://github.com/jaupi-enrico/streamio" target="_blank" rel="noopener">Server repo ↗</a>
+                    <a class="button secondary" href="https://github.com/jaupi-enrico/streamio-app" target="_blank" rel="noopener">App repo ↗</a>
+                </div>
+            </div>
+
+            <div class="shots">
+                <div class="shot">
+                    <img src="assets/projects/streamio-homepage.webp" alt="Streamio home page with a featured title and a row of recently added movies" width="1600" height="829" loading="lazy">
+                </div>
+                <div class="shot small">
+                    <img src="assets/projects/streamio-watch.webp" alt="Streamio video player with playback controls" width="1600" height="825" loading="lazy">
+                </div>
+            </div>
+
+        </article>
 
         <div class="projects">
 
