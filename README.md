@@ -6,7 +6,7 @@ Personal homepage, served with GitHub Pages straight from this repo's `main` bra
 
 - `index.html`, `about.html`, `projects.html`, `gallery.html`, `contact.html` — the pages
 - `assets/style.css` — shared styles
-- `assets/nav.js` — mobile nav toggle
+- `assets/main.js` — mobile nav, cursor glow, scroll reveal, card tilt
 - `assets/gallery.js` — gallery lightbox
 - `assets/avatar.svg` — avatar
 - `assets/cv/` — downloadable CV

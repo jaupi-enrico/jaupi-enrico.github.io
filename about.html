@@ -4,232 +4,229 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>About · Enrico Jaupi</title>
-<meta name="description" content="About Enrico Jaupi.">
+<meta name="description" content="About Enrico Jaupi: skills, experience, education and awards.">
 <link rel="icon" href="assets/avatar.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
+<div class="background" aria-hidden="true">
+    <div class="grid"></div>
+    <div class="orb one"></div>
+    <div class="orb two"></div>
+    <div class="orb three"></div>
+</div>
+<div class="cursor-glow" aria-hidden="true"></div>
+
 <header class="site-nav">
-  <div class="wrap">
-    <a class="brand" href="index.html"><span class="dot"></span>Enrico Jaupi</a>
-    <button class="nav-toggle" aria-label="Toggle menu">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-    </button>
+    <a href="index.html" class="logo"><span>&lt;</span>enrico<span>/&gt;</span></a>
     <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html" class="active">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
     </nav>
-  </div>
+    <div class="nav-right">
+        <div class="nav-status"><div class="status-dot"></div>Brescia, IT</div>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+    </div>
 </header>
 
 <main>
-  <div class="wrap">
 
-    <section>
-      <div class="panel">
-        <span class="eyebrow">About</span>
-        <h1>A bit more about me</h1>
-        <p>
-          I'm a Computer Science student based in Brescia, Italy, with a strong
-          foundation in software engineering and full‑stack development. I've
-          architected backend systems, automated operational workflows end to
-          end, and managed full project lifecycles as the sole technical
-          reference for two companies, all while still in high school.
-          I'm passionate about systems programming and scalable architecture,
-          and I'm looking to bring that into challenging, international
-          engineering environments.
+    <!-- HEADER -->
+
+    <section class="page-head">
+
+        <div class="section-label">ABOUT</div>
+
+        <h1 class="section-title">
+            A bit more
+            <span class="gradient">about me.</span>
+        </h1>
+
+        <p class="section-description">
+            I'm a Computer Science student based in Brescia, Italy, with a strong
+            foundation in software engineering and full‑stack development. I've
+            architected backend systems, automated operational workflows end to
+            end, and managed full project lifecycles as the sole technical
+            reference for two companies, all while still in high school.
+            I'm passionate about systems programming and scalable architecture,
+            and I'm looking to bring that into challenging, international
+            engineering environments.
         </p>
-      </div>
+
+        <div class="hero-buttons">
+            <a class="button primary" href="assets/cv/enrico-jaupi-cv.pdf" download>
+                <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 1a.5.5 0 0 1 .5.5v7.79l2.15-2.15a.5.5 0 1 1 .7.71l-3 3a.5.5 0 0 1-.7 0l-3-3a.5.5 0 1 1 .7-.71L7.5 9.29V1.5A.5.5 0 0 1 8 1Z"/><path d="M3 12.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5Z"/></svg>
+                Download CV (PDF)
+            </a>
+            <a class="button secondary" href="gallery.html">View certificates</a>
+        </div>
+
     </section>
 
-    <section>
-      <div class="panel">
-        <span class="eyebrow">Resume</span>
-        <h2>CV</h2>
-        <p>Download my CV as a PDF, or check the certificates in the gallery.</p>
-        <div class="btn-row">
-          <a class="btn primary" href="assets/cv/enrico-jaupi-cv.pdf" download>
-            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M8 1a.5.5 0 0 1 .5.5v7.79l2.15-2.15a.5.5 0 1 1 .7.71l-3 3a.5.5 0 0 1-.7 0l-3-3a.5.5 0 1 1 .7-.71L7.5 9.29V1.5A.5.5 0 0 1 8 1Z"/><path d="M3 12.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5Z"/></svg>
-            Download CV (PDF)
-          </a>
-          <a class="btn" href="gallery.html">
-            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M14.5 2h-13A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2ZM1.5 3h13a.5.5 0 0 1 .5.5v6.19l-2.65-2.65a.5.5 0 0 0-.7 0L8.5 10.19l-2-2a.5.5 0 0 0-.7 0L1 12v-8.5a.5.5 0 0 1 .5-.5ZM5 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"/></svg>
-            View certificates
-          </a>
+
+    <!-- SKILLS -->
+
+    <section id="skills" class="reveal">
+
+        <div class="section-label">01 / TOOLBOX</div>
+        <h2 class="section-title">What I work with.</h2>
+
+        <div class="skill-group-label">// languages</div>
+        <div class="skills">
+            <div class="skill"><div class="skill-name">C / C++</div><div class="skill-type">Systems</div></div>
+            <div class="skill"><div class="skill-name">Java</div><div class="skill-type">OOP / Desktop</div></div>
+            <div class="skill"><div class="skill-name">Python</div><div class="skill-type">Scripting / Data</div></div>
+            <div class="skill"><div class="skill-name">JavaScript</div><div class="skill-type">Web</div></div>
+            <div class="skill"><div class="skill-name">SQL</div><div class="skill-type">Databases</div></div>
+            <div class="skill"><div class="skill-name">VBA</div><div class="skill-type">Automation</div></div>
+            <div class="skill"><div class="skill-name">Assembly</div><div class="skill-type">Low level</div></div>
         </div>
-      </div>
+
+        <div class="skill-group-label">// frontend &amp; web</div>
+        <div class="skills">
+            <div class="skill"><div class="skill-name">React</div><div class="skill-type">UI library</div></div>
+            <div class="skill"><div class="skill-name">Astro</div><div class="skill-type">Static sites</div></div>
+            <div class="skill"><div class="skill-name">Bootstrap</div><div class="skill-type">CSS framework</div></div>
+        </div>
+
+        <div class="skill-group-label">// backend</div>
+        <div class="skills">
+            <div class="skill"><div class="skill-name">Node.js</div><div class="skill-type">Runtime</div></div>
+            <div class="skill"><div class="skill-name">Express</div><div class="skill-type">HTTP server</div></div>
+            <div class="skill"><div class="skill-name">Flask</div><div class="skill-type">Python web</div></div>
+            <div class="skill"><div class="skill-name">REST API</div><div class="skill-type">API design</div></div>
+            <div class="skill"><div class="skill-name">Socket.IO</div><div class="skill-type">Real-time</div></div>
+        </div>
+
+        <div class="skill-group-label">// tools &amp; devops</div>
+        <div class="skills">
+            <div class="skill"><div class="skill-name">Docker</div><div class="skill-type">Containers</div></div>
+            <div class="skill"><div class="skill-name">Git</div><div class="skill-type">Version control</div></div>
+            <div class="skill"><div class="skill-name">GitHub</div><div class="skill-type">Collaboration</div></div>
+            <div class="skill"><div class="skill-name">Vercel</div><div class="skill-type">Deployment</div></div>
+        </div>
+
+        <div class="skill-group-label">// others</div>
+        <div class="skills">
+            <div class="skill"><div class="skill-name">JavaFX</div><div class="skill-type">Desktop UI</div></div>
+            <div class="skill"><div class="skill-name">Packet Tracer</div><div class="skill-type">Networking</div></div>
+            <div class="skill"><div class="skill-name">Microsoft Office</div><div class="skill-type">Productivity</div></div>
+        </div>
+
+        <div class="skill-group-label">// spoken languages</div>
+        <div class="skills">
+            <div class="skill"><div class="skill-name">Italian</div><div class="skill-type">Native</div></div>
+            <div class="skill"><div class="skill-name">English</div><div class="skill-type">C1</div></div>
+            <div class="skill"><div class="skill-name">Spanish</div><div class="skill-type">A2</div></div>
+        </div>
+
     </section>
 
-    <section>
-      <div class="panel">
-        <span class="eyebrow">Skills</span>
-        <h2>What I work with</h2>
 
-        <div class="skill-group">
-          <h3>Languages</h3>
-          <div class="tags">
-            <span class="tag">C/C++</span>
-            <span class="tag">Java</span>
-            <span class="tag">Python</span>
-            <span class="tag">JavaScript</span>
-            <span class="tag">SQL</span>
-            <span class="tag">VBA</span>
-            <span class="tag">Assembly</span>
-          </div>
-        </div>
+    <!-- EXPERIENCE -->
 
-        <div class="skill-group">
-          <h3>Frontend &amp; web</h3>
-          <div class="tags">
-            <span class="tag">React</span>
-            <span class="tag">Astro</span>
-            <span class="tag">Bootstrap</span>
-          </div>
-        </div>
+    <section id="experience" class="reveal">
 
-        <div class="skill-group">
-          <h3>Backend</h3>
-          <div class="tags">
-            <span class="tag">Node.js</span>
-            <span class="tag">Express</span>
-            <span class="tag">Flask</span>
-            <span class="tag">REST API</span>
-            <span class="tag">Socket.IO</span>
-          </div>
-        </div>
+        <div class="section-label">02 / EXPERIENCE &amp; EDUCATION</div>
+        <h2 class="section-title">The journey so far.</h2>
 
-        <div class="skill-group">
-          <h3>Tools &amp; DevOps</h3>
-          <div class="tags">
-            <span class="tag">Docker</span>
-            <span class="tag">Git</span>
-            <span class="tag">GitHub</span>
-            <span class="tag">Vercel</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h3>Others</h3>
-          <div class="tags">
-            <span class="tag">JavaFX</span>
-            <span class="tag">Packet Tracer</span>
-            <span class="tag">Microsoft Office</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h3>Spoken languages</h3>
-          <div class="tags">
-            <span class="tag">Italian (Native)</span>
-            <span class="tag">English (C1)</span>
-            <span class="tag">Spanish (A2)</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="panel">
-        <span class="eyebrow">Timeline</span>
-        <h2>Experience &amp; education</h2>
         <div class="timeline">
-          <div class="timeline-item">
-            <time>Mar 2026 (1 month)</time>
-            <div>
-              <h3>Backend Lead, LA SANTI Gomme srl</h3>
-              <p>Built the company website in a month together with another developer. I led the backend: RESTful APIs and server-side logic with Node.js and Express, the Vercel deployment pipeline, production‑ready SEO, and a strict CSP.</p>
+
+            <div class="experience upcoming">
+                <div class="experience-date">From 2027</div>
+                <h3>Computer Engineering</h3>
+                <div class="experience-company">Politecnico di Milano</div>
+                <p>Starting after graduation, continuing on from the technical foundation built at ITIS Castelli.</p>
             </div>
-          </div>
-          <div class="timeline-item">
-            <time>Aug 2024 to Aug 2025</time>
-            <div>
-              <h3>Solo Software Developer (Freelance), Italfood srl</h3>
-              <p>Designed and built the company's entire worker scheduling system in VBA/Excel, cutting manual work and recurring errors, while acting as the sole technical point of contact with the client.</p>
+
+            <div class="experience">
+                <div class="experience-date">Mar 2026 · 1 month</div>
+                <h3>Backend Lead</h3>
+                <div class="experience-company">LA SANTI Gomme srl</div>
+                <p>Built the company website in a month together with another developer. I led the backend: RESTful APIs and server-side logic with Node.js and Express, the Vercel deployment pipeline, production‑ready SEO, and a strict CSP.</p>
             </div>
-          </div>
-          <div class="timeline-item">
-            <time>From 2027</time>
-            <div>
-              <h3>Politecnico di Milano, Computer Engineering</h3>
-              <p>Starting after graduation, continuing on from the technical foundation built at ITIS Castelli.</p>
+
+            <div class="experience">
+                <div class="experience-date">Aug 2024 — Aug 2025</div>
+                <h3>Solo Software Developer (Freelance)</h3>
+                <div class="experience-company">Italfood srl</div>
+                <p>Designed and built the company's entire worker scheduling system in VBA/Excel, cutting manual work and recurring errors, while acting as the sole technical point of contact with the client.</p>
             </div>
-          </div>
-          <div class="timeline-item">
-            <time>Sep 2022 to Jun 2027</time>
-            <div>
-              <h3>ITIS Castelli, Technical High School Diploma in Computer Science</h3>
-              <p>GPA 8.36/10. Core curriculum: Object‑Oriented Programming, Data Structures &amp; Algorithms, Databases, Operating Systems, Computer Networks, Discrete Mathematics.</p>
+
+            <div class="experience">
+                <div class="experience-date">Sep 2022 — Jun 2027</div>
+                <h3>Technical High School Diploma in Computer Science</h3>
+                <div class="experience-company">ITIS Castelli — Brescia</div>
+                <p>GPA 8.36/10. Core curriculum: Object‑Oriented Programming, Data Structures &amp; Algorithms, Databases, Operating Systems, Computer Networks, Discrete Mathematics.</p>
             </div>
-          </div>
+
         </div>
-      </div>
+
     </section>
 
-    <section>
-      <div class="panel">
-        <span class="eyebrow">Awards &amp; certificates</span>
-        <h2>Competitions &amp; courses</h2>
-        <div class="timeline">
-          <div class="timeline-item">
-            <time>OII</time>
-            <div>
-              <h3>Italian Olympiad in Informatics</h3>
-              <p>Ranked among the top 100 participants nationwide, qualifying for and competing in the National Individual Finals.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <time>OIS</time>
-            <div>
-              <h3>Italian Team Olympiad in Informatics</h3>
-              <p>Competed as a member of the school's team in the national programming competition.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <time>Math</time>
-            <div>
-              <h3>Italian Mathematics Olympiad &amp; Disfida Matematica</h3>
-              <p>Selected to represent the school in regional and national‑level mathematics competitions.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <time>Course</time>
-            <div>
-              <h3>Harvard CS50x</h3>
-              <p>Completed Harvard University's CS50x course, earning the official certificate of completion.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <time>Course</time>
-            <div>
-              <h3>PoliCollege, Politecnico di Milano</h3>
-              <p>Completed the PoliCollege enrichment program, an advanced university‑level course organized by Politecnico di Milano.</p>
-            </div>
-          </div>
+
+    <!-- AWARDS -->
+
+    <section id="awards" class="reveal">
+
+        <div class="section-label">03 / AWARDS &amp; CERTIFICATES</div>
+        <h2 class="section-title">Competitions &amp; courses.</h2>
+
+        <div class="projects">
+
+            <article class="project compact wide" style="--project-color: #cd7f32">
+                <div class="project-number">OII 2026 <em>🥉 BRONZE MEDAL</em></div>
+                <h3>Italian Olympiad in Informatics</h3>
+                <p>Won a bronze medal at the 2026 National Individual Finals, after qualifying among the top 100 participants nationwide.</p>
+            </article>
+
+            <article class="project compact" style="--project-color: #9b6cff">
+                <div class="project-number">OIS <em>TEAM</em></div>
+                <h3>Italian Team Olympiad in Informatics</h3>
+                <p>Competed as a member of the school's team in the national programming competition.</p>
+            </article>
+
+            <article class="project compact" style="--project-color: #5ee7ff">
+                <div class="project-number">MATH <em>REGIONAL / NATIONAL</em></div>
+                <h3>Mathematics Olympiad &amp; Disfida Matematica</h3>
+                <p>Selected to represent the school in regional and national‑level mathematics competitions.</p>
+            </article>
+
+            <article class="project compact" style="--project-color: #ff7ac8">
+                <div class="project-number">COURSE <em>CERTIFIED</em></div>
+                <h3>Harvard CS50x</h3>
+                <p>Completed Harvard University's CS50x course, earning the official certificate of completion.</p>
+            </article>
+
+            <article class="project compact" style="--project-color: #5b8cff">
+                <div class="project-number">COURSE <em>POLIMI</em></div>
+                <h3>PoliCollege</h3>
+                <p>Completed the PoliCollege enrichment program, an advanced university‑level course organized by Politecnico di Milano.</p>
+            </article>
+
         </div>
-        <div class="btn-row" style="margin-top:20px">
-          <a class="btn" href="gallery.html">
-            <svg viewBox="0 0 16 16" fill="currentColor"><path d="M14.5 2h-13A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2ZM1.5 3h13a.5.5 0 0 1 .5.5v6.19l-2.65-2.65a.5.5 0 0 0-.7 0L8.5 10.19l-2-2a.5.5 0 0 0-.7 0L1 12v-8.5a.5.5 0 0 1 .5-.5ZM5 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z"/></svg>
-            View certificate images
-          </a>
-        </div>
-      </div>
+
+        <a class="link-arrow" href="gallery.html">View certificate images →</a>
+
     </section>
 
-  </div>
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">made with a bit of caffeine · © <span id="year"></span> Enrico Jaupi</div>
+<footer>
+    <span>© <span id="year">2026</span> Enrico Jaupi</span>
+    <span>made with a bit of caffeine</span>
 </footer>
 
-<script src="assets/nav.js"></script>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="assets/main.js"></script>
 </body>
 </html>

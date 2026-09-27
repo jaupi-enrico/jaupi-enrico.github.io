@@ -8,91 +8,122 @@
 <link rel="icon" href="assets/avatar.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
 
+<div class="background" aria-hidden="true">
+    <div class="grid"></div>
+    <div class="orb one"></div>
+    <div class="orb two"></div>
+    <div class="orb three"></div>
+</div>
+<div class="cursor-glow" aria-hidden="true"></div>
+
 <header class="site-nav">
-  <div class="wrap">
-    <a class="brand" href="index.html"><span class="dot"></span>Enrico Jaupi</a>
-    <button class="nav-toggle" aria-label="Toggle menu">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-    </button>
+    <a href="index.html" class="logo"><span>&lt;</span>enrico<span>/&gt;</span></a>
     <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="gallery.html" class="active">Gallery</a>
-      <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="contact.html">Contact</a>
     </nav>
-  </div>
+    <div class="nav-right">
+        <div class="nav-status"><div class="status-dot"></div>Brescia, IT</div>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+    </div>
 </header>
 
 <main>
-  <div class="wrap">
 
-    <section>
-      <div class="panel">
-        <span class="eyebrow">Gallery</span>
-        <h1>Photos &amp; certificates</h1>
-        <p>A few pictures and certifications, click any tile to view it larger.</p>
-        <div class="todo"><svg viewBox="0 0 16 16" fill="currentColor"><path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793l1.293-1.293L12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 0 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/></svg>Replace the images in <code>assets/gallery/</code> with your real photos/certificates (jpg, png or webp all work); keep the <code>.gallery-item</code> markup and just swap the <code>src</code>/<code>data-full</code> and captions below.</div>
-      </div>
-    </section>
+    <!-- HEADER -->
 
-    <section>
-      <div class="panel">
-        <h2>Photos</h2>
-        <div class="gallery-grid">
-          <button class="gallery-item" data-full="assets/gallery/photo-1.svg">
-            <img src="assets/gallery/photo-1.svg" alt="Photo placeholder 1" loading="lazy">
-            <span class="gallery-caption">Caption</span>
-          </button>
-          <button class="gallery-item" data-full="assets/gallery/photo-2.svg">
-            <img src="assets/gallery/photo-2.svg" alt="Photo placeholder 2" loading="lazy">
-            <span class="gallery-caption">Caption</span>
-          </button>
-          <button class="gallery-item" data-full="assets/gallery/photo-3.svg">
-            <img src="assets/gallery/photo-3.svg" alt="Photo placeholder 3" loading="lazy">
-            <span class="gallery-caption">Caption</span>
-          </button>
+    <section class="page-head">
+
+        <div class="section-label">GALLERY</div>
+
+        <h1 class="section-title">
+            Photos &amp;
+            <span class="gradient">certificates.</span>
+        </h1>
+
+        <p class="section-description">
+            A few pictures and certifications. Click any tile to view it larger.
+        </p>
+
+        <div class="note">
+            <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793l1.293-1.293L12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 0 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/></svg>
+            <span>Replace the images in <code>assets/gallery/</code> with your real photos/certificates (jpg, png or webp all work); keep the <code>.gallery-item</code> markup and just swap the <code>src</code>/<code>data-full</code> and captions below.</span>
         </div>
-      </div>
+
     </section>
 
-    <section>
-      <div class="panel">
-        <h2>Certificates</h2>
+
+    <!-- PHOTOS -->
+
+    <section class="reveal">
+
+        <div class="section-label">01 / PHOTOS</div>
+        <h2 class="section-title">Snapshots.</h2>
+
         <div class="gallery-grid">
-          <button class="gallery-item" data-full="assets/gallery/certificate-1.svg">
-            <img src="assets/gallery/certificate-1.svg" alt="Harvard CS50x certificate placeholder" loading="lazy">
-            <span class="gallery-caption">Harvard CS50x</span>
-          </button>
-          <button class="gallery-item" data-full="assets/gallery/certificate-2.svg">
-            <img src="assets/gallery/certificate-2.svg" alt="PoliCollege certificate placeholder" loading="lazy">
-            <span class="gallery-caption">PoliCollege, Politecnico di Milano</span>
-          </button>
+            <button class="gallery-item" data-full="assets/gallery/photo-1.svg">
+                <img src="assets/gallery/photo-1.svg" alt="Photo placeholder 1" loading="lazy">
+                <span class="gallery-caption">Caption</span>
+            </button>
+            <button class="gallery-item" data-full="assets/gallery/photo-2.svg">
+                <img src="assets/gallery/photo-2.svg" alt="Photo placeholder 2" loading="lazy">
+                <span class="gallery-caption">Caption</span>
+            </button>
+            <button class="gallery-item" data-full="assets/gallery/photo-3.svg">
+                <img src="assets/gallery/photo-3.svg" alt="Photo placeholder 3" loading="lazy">
+                <span class="gallery-caption">Caption</span>
+            </button>
         </div>
-      </div>
+
     </section>
 
-  </div>
+
+    <!-- CERTIFICATES -->
+
+    <section class="reveal">
+
+        <div class="section-label">02 / CERTIFICATES</div>
+        <h2 class="section-title">Certificates.</h2>
+
+        <div class="gallery-grid">
+            <button class="gallery-item" data-full="assets/gallery/certificate-1.svg">
+                <img src="assets/gallery/certificate-1.svg" alt="Harvard CS50x certificate placeholder" loading="lazy">
+                <span class="gallery-caption">Harvard CS50x</span>
+            </button>
+            <button class="gallery-item" data-full="assets/gallery/certificate-2.svg">
+                <img src="assets/gallery/certificate-2.svg" alt="PoliCollege certificate placeholder" loading="lazy">
+                <span class="gallery-caption">PoliCollege, Politecnico di Milano</span>
+            </button>
+        </div>
+
+    </section>
+
 </main>
 
-<footer class="site-footer">
-  <div class="wrap">made with a bit of caffeine · © <span id="year"></span> Enrico Jaupi</div>
+<footer>
+    <span>© <span id="year">2026</span> Enrico Jaupi</span>
+    <span>made with a bit of caffeine</span>
 </footer>
 
-<div class="lightbox">
-  <button class="lightbox-close" aria-label="Close">
-    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4l8 8M12 4l-8 8"/></svg>
-  </button>
-  <img src="" alt="">
+<div class="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+    <button class="lightbox-close" aria-label="Close">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4l8 8M12 4l-8 8"/></svg>
+    </button>
+    <img src="" alt="">
 </div>
 
-<script src="assets/nav.js"></script>
+<script src="assets/main.js"></script>
 <script src="assets/gallery.js"></script>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
