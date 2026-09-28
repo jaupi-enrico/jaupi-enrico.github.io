@@ -1176,38 +1176,6 @@ a.contact-card:hover .go {
    GALLERY
 ========================= */
 
-.note {
-    display: flex;
-    gap: 10px;
-
-    max-width: 720px;
-    margin-top: 30px;
-    padding: 14px 16px;
-
-    border: 1px dashed rgba(91,140,255,.35);
-    border-radius: 12px;
-
-    background: rgba(91,140,255,.05);
-
-    color: var(--muted);
-    font-size: 13px;
-    line-height: 1.6;
-}
-
-.note svg {
-    flex: 0 0 auto;
-    width: 14px;
-    height: 14px;
-    margin-top: 3px;
-    color: var(--blue);
-}
-
-.note code {
-    font-family: "JetBrains Mono", monospace;
-    font-size: 12px;
-    color: var(--text);
-}
-
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
