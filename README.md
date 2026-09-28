@@ -4,13 +4,15 @@ Personal homepage, served with GitHub Pages straight from this repo's `main` bra
 
 ## Structure
 
-- `index.html`, `about.html`, `projects.html`, `gallery.html`, `contact.html` — the pages
+- `index.html`, `about.html`, `projects.html`, `awards.html`, `gallery.html`, `contact.html` — the pages
 - `assets/style.css` — shared styles
 - `assets/main.js` — mobile nav, cursor glow, scroll reveal, card tilt
 - `assets/gallery.js` — gallery lightbox
 - `assets/avatar.svg` — avatar
 - `assets/cv/` — downloadable CV
-- `assets/gallery/` — photos and certificates
+- `assets/gallery/` — photos; `assets/gallery/certs/` holds the certificates as WebP (full-size + `-thumb`). The original scans are git-ignored.
+- `assets/og-image.png` — social preview image
+- `sitemap.xml`, `robots.txt` — for search engines (update `lastmod` in the sitemap when a page changes)
 
 ## Local preview
 

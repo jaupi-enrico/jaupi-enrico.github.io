@@ -1,0 +1,5 @@
+# Full-resolution printer scans of certificates; the site uses the
+# compressed WebP copies in assets/gallery/certs/ instead.
+assets/gallery/*.png
+assets/gallery/*.jpg
+assets/gallery/*.jpeg

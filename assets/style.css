@@ -1255,6 +1255,10 @@ a.contact-card:hover .go {
     transform: scale(1.05);
 }
 
+.gallery-item.portrait img {
+    object-position: center 15%;
+}
+
 .gallery-caption {
     position: absolute;
     left: 0;
@@ -1329,6 +1333,123 @@ a.contact-card:hover .go {
 @keyframes fade {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+/* =========================
+   AWARDS
+========================= */
+
+.award-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    max-width: 760px;
+    margin-top: 34px;
+}
+
+.award-stats a {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    padding: 18px 20px;
+
+    border: 1px solid var(--border);
+    border-radius: 15px;
+
+    background: rgba(255,255,255,.02);
+
+    transition: .3s;
+}
+
+.award-stats a:hover {
+    transform: translateY(-4px);
+    background: rgba(255,255,255,.045);
+    border-color: rgba(255,255,255,.18);
+}
+
+.award-stats strong {
+    font-size: 18px;
+    letter-spacing: -.3px;
+}
+
+.award-stats span {
+    color: var(--muted);
+    font-family: "JetBrains Mono", monospace;
+    font-size: 11px;
+}
+
+.projects.home-awards {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.awards {
+    display: grid;
+    gap: 18px;
+    margin-top: 50px;
+}
+
+.awards .projects {
+    margin-top: 0;
+}
+
+.award {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+    gap: 36px;
+    align-items: center;
+
+    scroll-margin-top: 110px;
+}
+
+.award.stacked {
+    grid-template-columns: 1fr;
+    gap: 28px;
+}
+
+.award-facts {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    margin-top: 20px;
+
+    list-style: none;
+
+    font-family: "JetBrains Mono", monospace;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.award-facts li::before {
+    content: "→ ";
+    color: var(--project-color, var(--blue));
+}
+
+.award-certs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.award.stacked .award-certs {
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+}
+
+.award-certs.single {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 380px;
+    justify-self: end;
+}
+
+.award-certs .gallery-item {
+    border-radius: 12px;
+}
+
+.award-certs .gallery-caption {
+    padding: 24px 12px 10px;
+    font-size: 10.5px;
 }
 
 /* =========================
@@ -1481,7 +1602,20 @@ footer a:hover {
 
     .projects,
     .facts,
-    .contact-grid {
+    .contact-grid,
+    .award {
+        grid-template-columns: 1fr;
+    }
+
+    .award {
+        gap: 26px;
+    }
+
+    .award-certs.single {
+        max-width: none;
+    }
+
+    .projects.home-awards {
         grid-template-columns: 1fr;
     }
 
@@ -1581,8 +1715,13 @@ footer a:hover {
     }
 
     .skills,
-    .gallery-grid {
+    .gallery-grid,
+    .award-stats {
         grid-template-columns: 1fr;
+    }
+
+    .award.stacked .award-certs {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .contact-card {
