@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /assets/gallery/certs/
+
+User-agent: Googlebot-Image
+Disallow: /assets/gallery/certs/
 
 Sitemap: https://jaupi-enrico.github.io/sitemap.xml
